@@ -1,0 +1,37 @@
+-- ~/.config/hypr/hyprland.lua
+
+-- Set monitors
+hl.monitor("HDMI-A-1", "1920x1080@60", "0x0", 1)
+hl.monitor("HDMI-A-3", "1920x1080@60", "1920x0", 1)
+
+-- Monitor settings
+--hl.config({
+--    monitor = {
+--        { description = "HDMI-A-1", resolution = "1920x1080@60", position = "0x0", scale = 1 }, 
+--        { description = "HDMI-A-3", resolution = "1920x1080@60", position = "1920x0", scale = 1 }
+--    }
+--})
+
+-- Keybindings
+hl.bind("SUPER + Q", hl.dsp.exec_cmd("kitty"))   -- Opens a terminal
+hl.bind("SUPER + SHIFT + M", hl.dsp.exit())              -- Exits Hyprland
+hl.bind("SUPER + C", hl.dsp.window.close())      -- Closes a window
+hl.bind("SUPER + R", hl.dsp.exec_cmd("wofi --show drun")) -- Opens launcher
+
+-- Input settings
+hl.config({
+    input = {
+        kb_layout = "us",
+        touchpad = {
+            natural_scroll = true,
+            tap_to_click = true
+        }
+    }
+})
+
+-- Autostart applications
+hl.on("hyprland.start", function()
+    hl.exec_cmd("waybar")
+    hl.exec_cmd("dunst")
+    hl.exec_cmd("hyprpaper")
+end)

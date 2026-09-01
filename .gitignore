@@ -1,0 +1,15 @@
+# Machine specific hardware configs
+hosts/*/hardware-configuration.nix
+
+# Build artifacts
+result
+result-*
+
+# Editor files
+*.swp
+*.swo
+.DS_Store
+
+# Nix files
+.envrc
+.direnv/
