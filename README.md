@@ -2,7 +2,7 @@
 
 # Machines
 - `nanou`: Mac Mini late 2012
-- `flim': Lenovo Thinkpad
+- `flim`: Lenovo Thinkpad
 
 # Structure
 - `hosts/`: Machine-specific configurations
