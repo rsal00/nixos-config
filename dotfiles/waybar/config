@@ -1,6 +1,6 @@
 // -*- mode: jsonc -*-
 [{
-    "output": ["HDMI-A-1", "HDMI-A-3"],
+    "output": ["HDMI-A-1", "HDMI-A-3", "eDP-1"],
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 24, // Waybar height (to be removed for auto height)
@@ -25,9 +25,9 @@
 		"cpu",
 		"memory",
 	"wireplumber",
-        "backlight",
-        "clock",
-        "battery"
+        //"backlight",
+	"network",
+        "clock"
         //"tray"
     ],
     // Modules configuration
@@ -76,7 +76,7 @@
  	//"format": "  {status_icon} {dynamic}",
  	"format": "{status_icon} {dynamic}",
         "interval": 1,
-        "dynamic-len": 40,
+        "dynamic-len": 20,
 	"status-icons": {
 		"playing": "▶",
 		"paused": "⏸",
@@ -177,5 +177,12 @@
             "default": ["", "", ""]
         },
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+    "network": {
+      "format-disconnected": "󰖪 0% ",
+      "format-ethernet": "󰈀 100% ",
+      "format-linked": "{ifname} (No IP)",
+      "format-wifi": "  {signalStrength}%",
+      "tooltip-format": "Connected to {essid} {ifname} via {gwaddr}"
     }
 }]

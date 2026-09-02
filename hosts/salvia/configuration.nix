@@ -26,7 +26,8 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-  networking.enableB43Firmware = true;
+
+  boot.kernelModules = [ "iwlwifi" ];
 
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
