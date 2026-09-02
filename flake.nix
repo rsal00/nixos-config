@@ -21,7 +21,15 @@
       	  ];
         };
 
-		# flim (thinkpad)
+		# salvia (thinkpad)
+		salvia = nixpkgs.lib.nixosSystem {
+		  system = "x86_64-linux";
+	  	  specialArgs = { inherit tpanel; };
+		  modules = [
+		    ./hosts/salvia/configuration.nix
+                    { nixpkgs.overlays = [ apple-fonts.overlays.default ]; }
+		  ];
+		};
  	 };
   };
 }
