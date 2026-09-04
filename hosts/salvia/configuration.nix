@@ -144,6 +144,13 @@
     pavucontrol
     mpvpaper
     wlogout
+ 	jdk
+	gnumake
+	gcc
+	cmake
+	python3
+	python3Packages.pip
+
     polkit_gnome
 
     # KDE System Settings and dependencies
