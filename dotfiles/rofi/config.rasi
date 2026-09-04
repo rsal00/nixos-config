@@ -13,6 +13,12 @@ configuration{
     border-radius: 10;
 }
 
-//@theme "~/.config/rofi/themes/catppuccin-macchiato.rasi"
+@theme "~/nixos-config/dotfiles/rofi/themes/catppuccin-macchiato.rasi"
 
-@theme "/nix/store/yb2z62w6i6rsvn3anzxl1rlhaq026ayr-rofi-2.0.0/share/rofi/themes/DarkBlue.rasi"
+//@theme "/nix/store/yb2z62w6i6rsvn3anzxl1rlhaq026ayr-rofi-2.0.0/share/rofi/themes/DarkBlue.rasi"
+
+//@theme "/nix/store/yb2z62w6i6rsvn3anzxl1rlhaq026ayr-rofi-2.0.0/share/rofi/themes/sidebar.rasi"
+
+//@theme "/run/current-system/sw/share/rofi/themes/paper-float.rasi"
+
+//@theme "/run/current-system/sw/share/rofi/themes/Paper.rasi"

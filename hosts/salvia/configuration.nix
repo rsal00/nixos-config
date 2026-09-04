@@ -144,6 +144,34 @@
     pavucontrol
     mpvpaper
     wlogout
+    polkit_gnome
+
+    # KDE System Settings and dependencies
+    kdePackages.systemsettings
+    kdePackages.kdeclarative
+    kdePackages.kirigami
+    kdePackages.kcmutils
+    kdePackages.ksvg
+    kdePackages.qt5compat
+    kdePackages.qtpositioning
+    kdePackages.kconfig
+    kdePackages.kcoreaddons
+    kdePackages.ki18n
+    kdePackages.kwidgetsaddons
+  
+    # Network management
+    kdePackages.networkmanager-qt
+    #plasma5Packages.plasma-nm
+  
+    # KDE Wallet
+    kdePackages.kwallet
+    kdePackages.kwallet-pam
+  
+    # PolKit agent
+    #polkit-kde-agent
+  
+    # Quick controls (available through other packages)
+    libsForQt5.qtquickcontrols2  
   ];
   
   # Enable Bluetooth
