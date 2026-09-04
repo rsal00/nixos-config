@@ -77,7 +77,7 @@ element-icon {
 
 element selected {
     background-color:  @selected-col ;
-    text-color: @teal  ;
+    text-color: #ff842f  ;
 }
 
 mode-switcher {
